@@ -1,80 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Time tracking dashboard</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Time tracking dashboard</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Report for
-  Jeremy Robson
-
-  Daily
-  Weekly
-  Monthly
-
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
-
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
-
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
-
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
-
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
-
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <div class="cardMain">
+      <div class="profile">
+        <img alt src="images\image-jeremy.png" />
+        <div>
+          <span>Report for</span>
+          <span class="name">Jeremy Robson</span>
+        </div>
+      </div>
+      <div id="control">
+        <span>Daily</span>
+        <span>Weekly</span>
+        <span>Monthly</span>
+      </div>
+    </div>
+    <div
+      class="card"
+      style="
+        background-image: url('images/icon-work.svg');
+        background-color: hsl(15, 100%, 70%);
+      "
+    >
+      <div class="stat">
+        <div class="category">
+          Work <img alt src="images\icon-ellipsis.svg" />
+        </div>
+        <div class="record">
+          <span class="current"></span>
+          <span class="previous"></span>
+        </div>
+      </div>
+    </div>
+    <div
+      class="card"
+      style="
+        background-image: url('images/icon-play.svg');
+        background-color: hsl(195, 74%, 62%);
+      "
+    >
+      <div class="stat">
+        <div class="category">
+          Work <img alt src="images\icon-ellipsis.svg" />
+        </div>
+        <div class="record">
+          <span class="current"></span>
+          <span class="previous"></span>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="card"
+      style="
+        background-image: url('images/icon-study.svg');
+        background-color: hsl(348, 100%, 68%);
+      "
+    >
+      <div class="stat">
+        <div class="category">
+          Work <img alt src="images\icon-ellipsis.svg" />
+        </div>
+        <div class="record">
+          <span class="current"></span>
+          <span class="previous"></span>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="card"
+      style="
+        background-image: url('images/icon-exercise.svg');
+        background-color: hsl(145, 58%, 55%);
+      "
+    >
+      <div class="stat">
+        <div class="category">
+          Work <img alt src="images\icon-ellipsis.svg" />
+        </div>
+        <div class="record">
+          <span class="current"></span>
+          <span class="previous"></span>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="card"
+      style="
+        background-image: url('images/icon-social.svg');
+        background-color: hsl(264, 64%, 52%);
+      "
+    >
+      <div class="stat">
+        <div class="category">
+          Work <img alt src="images\icon-ellipsis.svg" />
+        </div>
+        <div class="record">
+          <span class="current"></span>
+          <span class="previous"></span>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="card"
+      style="
+        background-image: url('images/icon-self-care.svg');
+        background-color: hsl(43, 84%, 65%);
+      "
+    >
+      <div class="stat">
+        <div class="category">
+          Work <img alt src="images\icon-ellipsis.svg" />
+        </div>
+        <div class="record">
+          <span class="current"></span>
+          <span class="previous"></span>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>

@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: "Rubik";
+  font-size: 16px;
+  font-weight: 300;
+}
+body {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+  margin: 0;
+  color: white;
+  background-color: hsl(226, 43%, 10%);
+  row-gap: 5%;
+  grid-auto-rows: 170px;
+}
+
+.cardMain {
+  width: 100%;
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 10px;
+  color: hsl(236, 100%, 87%);
+}
+
+.profile {
+  height: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5%;
+  color: white;
+  background-color: hsl(235, 45%, 61%);
+  border-radius: 10px;
+}
+
+.profile > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5%;
+}
+
+.name {
+  font-size: 22px;
+}
+
+.profile > img {
+  border: 5px solid white;
+  border-radius: 120px;
+  width: 25%;
+}
+
+#control {
+  display: flex;
+  justify-content: space-evenly;
+  height: 40%;
+}
+
+#control > span {
+  align-self: center;
+  cursor: pointer;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  height: 100%;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-position-y: -10%;
+  background-position-x: 90%;
+  cursor: pointer;
+}
+
+.card:hover > .stat {
+  background-color: hsl(236, 37%, 37%);
+}
+
+.stat {
+  height: 75%;
+  border-radius: inherit;
+  background-color: hsl(235, 46%, 20%);
+  padding: 8%;
+}
+
+.category {
+  display: flex;
+  font-weight: 500;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5%;
+}
+
+.record {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.current {
+  font-size: 32px;
+}
+
+.previous {
+  font-size: 12px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 376px) {
+  body {
+    padding: 20% 5%;
+    grid-template-areas:
+      "a o o o"
+      "a o o o";
+    grid-column-gap: 5%;
+    grid-auto-columns: 250px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    justify-content: space-between;
+  }
+
+  .cardMain {
+    grid-area: a;
+  }
+
+  .profile {
+    height: 70%;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .profile > img {
+    width: 40%;
+  }
+
+  .name {
+    font-size: 32px;
+  }
+
+  .control {
+    text-align: left;
+    flex-direction: column;
+    height: 30%;
+    padding-left: 5%;
+  }
+
+  .control > span {
+    align-self: flex-start;
+  }
+
+  .record {
+    flex-direction: column;
+  }
+  .record > span {
+    align-self: flex-start;
+  }
+
+  .attribution {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
